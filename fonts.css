@@ -1,0 +1,31 @@
+/* deltavdevs — fonts
+   Exo 2 (variable) & Gugi are self-hosted from ./fonts.
+   DM Mono is pulled from Google Fonts, same as the main site. */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap");
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("fonts/Exo2-VariableFont_wght.ttf") format("truetype-variations"),
+    url("fonts/Exo2-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype-variations"),
+    url("fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gugi";
+  src: url("fonts/Gugi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
