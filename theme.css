@@ -10,7 +10,7 @@
   /* Fonts */
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --font-display: "Gugi", "Arial Black", Impact, sans-serif;
+  --font-display: "Exo 2", "Helvetica Neue", Arial, sans-serif;
 
   --font-weight-normal: 400;
   --font-weight-medium: 500;
@@ -24,7 +24,7 @@
   --font-4: 1.25rem; /* lead */
   --font-5: 1.75rem; /* headline */
   --font-6: 2.5rem; /* title */
-  --font-7: 3.75rem; /* ultratitle */
+  --font-7: 5.025rem; /* ultratitle */
 
   /* Spacing */
   --spacing-1: 0.5rem;
@@ -49,39 +49,39 @@
   --transition-base: 100ms steps(2, end);
 
   /* Neutral scale — soft charcoal, not pure black/white */
-  --darker: #161416; /* ink: text on colored fills */
-  --dark: #1c1a1c;
-  --darkless: #252226;
-  --black: #2e2b2f;
-  --steel: #38353a;
-  --slate: #4f4b51;
-  --muted: #8d878c;
-  --smoke: #b0a9ae;
-  --snow: #cfc7cc;
-  --white: #e4dce0;
+  --darker: #1e2927; /* ink: text on colored fills */
+  --dark: #25322f;
+  --darkless: #2d3d3a;
+  --black: #354744;
+  --steel: #3e5450;
+  --slate: #53706a;
+  --muted: #95b1ab;
+  --smoke: #c0d0cd;
+  --snow: #e1e9e7;
+  --white: #ffffff;
 
   /* Semantic swatches */
-  --red: #e0413a;
-  --orange: #eb6841;
-  --yellow: #d9b800;
-  --green: #44bba4;
-  --blue: #3f88c5;
-  --purple: #8a5ad1;
+  --red: #d94136;
+  --orange: #d95c36;
+  --yellow: #d9c036;
+  --green: #36d9bb;
+  --blue: #368fd9;
+  --purple: #7736d9;
 
   /* Brand — palette: eb6841 / 000000 / eee5e9 / 3f88c5 / 44bba4 */
-  --primary: #eb6841; /* orange — focus, eyebrows, pills, hover. Highlight only */
-  --secondary: #3f88c5; /* blue — links */
-  --accent: #44bba4; /* teal — .cta */
+  --primary: #57baa7; /* orange — focus, eyebrows, pills, hover. Highlight only */
+  --secondary: #8d83cb; /* blue — links */
+  --accent: #9b4555; /* teal — .cta */
 
   /* Surfaces */
   --background: var(--dark);
   --sheet: var(--darkless);
   --elevated: var(--darkless);
   --sunken: var(--black);
-  --border: #6f6a70;
-  --border-strong: #a39da2;
+  --border: #72978f;
+  --border-strong: #b1c5c1;
   --text: var(--white);
-  --shadow: #0a090a;
+  --shadow: #151c1b;
 
   /* Rule weight used everywhere */
   --rule: 2px;
@@ -173,6 +173,7 @@ code {
   background: var(--white);
   color: var(--darker);
   padding: 0.05em 0.35em;
+  border-radius: 0px;
 }
 
 pre {
@@ -182,6 +183,8 @@ pre {
   border: var(--rule) solid var(--border);
   padding: var(--spacing-2);
   overflow-x: auto;
+  border-radius: 0px;
+  box-shadow: 7px 8px 0px var(--shadow);
 }
 
 pre code {
@@ -282,6 +285,7 @@ pre code {
   color: var(--darker);
   padding: 0.15rem 0.5rem;
   margin: 0 0 var(--spacing-1);
+  border-radius: 0px;
 }
 
 .lead {
@@ -317,7 +321,7 @@ button {
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding: 0.6rem 1.25rem;
+  padding: 10px 43px;
   border: var(--rule) solid var(--border);
   background: var(--white);
   color: var(--darker);
@@ -325,6 +329,7 @@ button {
   cursor: pointer;
   transition: background var(--transition-fast), color var(--transition-fast),
     transform var(--transition-fast), box-shadow var(--transition-fast);
+  border-radius: 13px;
 }
 
 button:hover {
@@ -379,6 +384,7 @@ button.cta:active {
   border: var(--rule) solid var(--border);
   padding: var(--spacing-3);
   box-shadow: var(--card-shadow);
+  border-radius: 10px;
 }
 
 .card.sunken {
@@ -431,6 +437,7 @@ textarea {
   border: var(--rule) solid var(--border);
   padding: 0.6rem 0.8rem;
   transition: background var(--transition-fast), box-shadow var(--transition-fast);
+  border-radius: 9px;
 }
 
 textarea {
@@ -468,6 +475,7 @@ textarea:focus {
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  border-radius: 68px;
 }
 
 .outline-badge {
@@ -482,4 +490,5 @@ textarea:focus {
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  border-radius: 40px;
 }
