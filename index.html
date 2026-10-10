@@ -5,6 +5,7 @@
     <title>deltavdevs CSS</title>
     <link rel="stylesheet" href="theme.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="themes.css" />
 
     <meta property="og:title" content="deltavdevs CSS" />
     <meta name="twitter:title" content="deltavdevs CSS" />
@@ -73,6 +74,31 @@
     <div
       style="padding-top: var(--spacing-4); padding-bottom: var(--spacing-4)"
     >
+      <div class="container" style="margin-bottom: var(--spacing-5)">
+        <h1 class="headline" style="font-size: var(--font-5)">Themes</h1>
+        <p>
+          Load <a href="https://css.deltavdevs.com/themes.css">themes.css</a>
+          after theme.css and set <code>data-theme</code> on
+          <code>&lt;html&gt;</code>. Each theme only reassigns the tokens, so
+          this whole page changes with it. The 3D world on
+          <a href="https://demo.deltavdevs.com">demo.deltavdevs.com</a> is
+          painted from the same tokens.
+        </p>
+        <div id="theme-buttons" style="display: flex; flex-wrap: wrap; gap: var(--spacing-2)">
+          <button class="outline" data-set-theme="teal">teal</button>
+          <button class="outline" data-set-theme="paper">paper</button>
+          <button class="outline" data-set-theme="ember">ember</button>
+          <button class="outline" data-set-theme="cobalt">cobalt</button>
+          <button class="outline" data-set-theme="lcd">lcd</button>
+          <button class="outline" data-set-theme="void">void</button>
+        </div>
+        <script>
+          document.getElementById("theme-buttons").addEventListener("click", (e) => {
+            const name = e.target.closest("[data-set-theme]")?.dataset.setTheme;
+            if (name) document.documentElement.dataset.theme = name;
+          });
+        </script>
+      </div>
       <div class="container">
         <h1 class="headline" style="font-size: var(--font-5)">Containers</h1>
       </div>

@@ -1,0 +1,163 @@
+/* ==========================================================================
+   deltavdevs themes — optional, load after theme.css
+   Each theme only reassigns tokens from theme.css, so every class keeps
+   working. Put data-theme="<name>" on <html> (or any wrapper) to switch.
+   No attribute, or data-theme="teal", is the stock theme.
+
+   The --scene-* tokens are for canvas / WebGL consumers (demo.deltavdevs.com
+   paints its 3D world with them). Plain pages can ignore them.
+   ========================================================================== */
+
+:root,
+[data-theme="teal"] {
+  --scene-sky: var(--dark);
+  --scene-floor: var(--border);
+  --scene-body: var(--primary);
+  --scene-accent: var(--accent);
+  --scene-ink: var(--darker);
+  --scene-light: var(--snow);
+  --scene-metal: var(--slate);
+  --scene-glow: var(--secondary);
+}
+
+/* Light. The original coolors palette noted in theme.css. */
+[data-theme="paper"] {
+  --background: #eee5e9;
+  --sheet: #f7f2f4;
+  --elevated: #ffffff;
+  --sunken: #e2d6db;
+  --border: #1e1a1c;
+  --border-strong: #000000;
+  --text: #141012;
+  --shadow: #141012;
+  --primary: #eb6841;
+  --secondary: #3f88c5;
+  --accent: #44bba4;
+  --darker: #141012;
+  --muted: #6e6268;
+  --smoke: #4a4045;
+  --snow: #2a2326;
+
+  --scene-sky: #eee5e9;
+  --scene-floor: #141012;
+  --scene-body: #eb6841;
+  --scene-accent: #3f88c5;
+  --scene-ink: #141012;
+  --scene-light: #ffffff;
+  --scene-metal: #b9adb2;
+  --scene-glow: #44bba4;
+}
+
+/* Everything orange, ink outlines. */
+[data-theme="ember"] {
+  --background: #d95c36;
+  --sheet: #cc512c;
+  --elevated: #e2683f;
+  --sunken: #b8441f;
+  --border: #1e1210;
+  --border-strong: #140c0a;
+  --text: #fff4ec;
+  --shadow: #2a120a;
+  --primary: #ffd166;
+  --secondary: #fff4ec;
+  --accent: #f2e8cf;
+  --darker: #1e1210;
+  --muted: #ffd2c0;
+  --smoke: #ffe6da;
+  --snow: #fff4ec;
+
+  --scene-sky: #d95c36;
+  --scene-floor: #1e1210;
+  --scene-body: #fff4ec;
+  --scene-accent: #ffd166;
+  --scene-ink: #1e1210;
+  --scene-light: #f2e8cf;
+  --scene-metal: #8a2f17;
+  --scene-glow: #ffd166;
+}
+
+/* Everything blue, yellow highlight. */
+[data-theme="cobalt"] {
+  --background: #3f88c5;
+  --sheet: #3579b3;
+  --elevated: #4b93cf;
+  --sunken: #2d6aa0;
+  --border: #0d1b2a;
+  --border-strong: #08121c;
+  --text: #ffffff;
+  --shadow: #0d1b2a;
+  --primary: #ffe14d;
+  --secondary: #ffffff;
+  --accent: #44bba4;
+  --darker: #0d1b2a;
+  --muted: #cfe3f5;
+  --smoke: #e3eef9;
+  --snow: #f3f8fc;
+
+  --scene-sky: #3f88c5;
+  --scene-floor: #0d1b2a;
+  --scene-body: #ffffff;
+  --scene-accent: #ffe14d;
+  --scene-ink: #0d1b2a;
+  --scene-light: #cfe3f5;
+  --scene-metal: #1f4f7a;
+  --scene-glow: #ffe14d;
+}
+
+/* Old handheld screen. Dark ink on green, so the "white" fills flip dark. */
+[data-theme="lcd"] {
+  --background: #9fb58a;
+  --sheet: #aec499;
+  --elevated: #b9cfa3;
+  --sunken: #8ea57a;
+  --border: #2f3a26;
+  --border-strong: #1f2719;
+  --text: #1f2719;
+  --shadow: #56634a;
+  --white: #2f3a26;
+  --primary: #2f3a26;
+  --secondary: #1f2719;
+  --accent: #56634a;
+  --darker: #cbe3b4;
+  --muted: #4d5843;
+  --smoke: #3a4530;
+  --snow: #2a3322;
+
+  --scene-sky: #9fb58a;
+  --scene-floor: #2f3a26;
+  --scene-body: #6d8d54;
+  --scene-accent: #2f3a26;
+  --scene-ink: #1f2719;
+  --scene-light: #cbe3b4;
+  --scene-metal: #56634a;
+  --scene-glow: #cbe3b4;
+}
+
+/* Near black with neon. */
+[data-theme="void"] {
+  --background: #0b0b10;
+  --sheet: #13131c;
+  --elevated: #181824;
+  --sunken: #08080c;
+  --border: #3a2f5c;
+  --border-strong: #7a6bb0;
+  --text: #ece8ff;
+  --shadow: #000000;
+  --white: #ece8ff;
+  --primary: #b18cff;
+  --secondary: #5ee6d0;
+  --accent: #ff5c8a;
+  --darker: #0b0b10;
+  --muted: #8a84a8;
+  --smoke: #bdb6dc;
+  --snow: #ddd8f5;
+
+  --scene-sky: #0b0b10;
+  --scene-floor: #3a2f5c;
+  --scene-body: #b18cff;
+  --scene-accent: #ff5c8a;
+  --scene-ink: #1a1726;
+  --scene-light: #ece8ff;
+  --scene-metal: #5ee6d0;
+  --scene-glow: #5ee6d0;
+}
