@@ -16,7 +16,8 @@ jobs:
       - name: stage site
         run: |
           mkdir dist
-          cp -r index.html *.css fonts _headers dist/
+          cp -r index.html *.css *.js fonts _headers dist/
+          test -s dist/showcase.js
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
