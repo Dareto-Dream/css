@@ -22,6 +22,10 @@
 
 /* Light. The original coolors palette noted in theme.css. */
 [data-theme="paper"] {
+  color-scheme: light;
+  --on-accent: #141012;
+  --on-secondary: #ffffff;
+  --primary-text: #a43f21;
   --background: #eee5e9;
   --sheet: #f7f2f4;
   --elevated: #ffffff;
@@ -31,10 +35,10 @@
   --text: #141012;
   --shadow: #141012;
   --primary: #eb6841;
-  --secondary: #3f88c5;
+  --secondary: #246394;
   --accent: #44bba4;
   --darker: #141012;
-  --muted: #6e6268;
+  --muted: #65595f;
   --smoke: #4a4045;
   --snow: #2a2326;
 
@@ -50,10 +54,13 @@
 
 /* Everything orange, ink outlines. */
 [data-theme="ember"] {
-  --background: #d95c36;
-  --sheet: #cc512c;
-  --elevated: #e2683f;
-  --sunken: #b8441f;
+  color-scheme: dark;
+  --on-accent: #1e1210;
+  --control-border: #ffc1a5;
+  --background: #a3351c;
+  --sheet: #943019;
+  --elevated: #a3351c;
+  --sunken: #852b17;
   --border: #1e1210;
   --border-strong: #140c0a;
   --text: #fff4ec;
@@ -78,10 +85,13 @@
 
 /* Everything blue, yellow highlight. */
 [data-theme="cobalt"] {
-  --background: #3f88c5;
-  --sheet: #3579b3;
-  --elevated: #4b93cf;
-  --sunken: #2d6aa0;
+  color-scheme: dark;
+  --on-accent: #0d1b2a;
+  --control-border: #a7c9e8;
+  --background: #1d5287;
+  --sheet: #194877;
+  --elevated: #245c94;
+  --sunken: #153e68;
   --border: #0d1b2a;
   --border-strong: #08121c;
   --text: #ffffff;
@@ -106,6 +116,8 @@
 
 /* Old handheld screen. Dark ink on green, so the "white" fills flip dark. */
 [data-theme="lcd"] {
+  color-scheme: light;
+  --on-accent: #ffffff;
   --background: #9fb58a;
   --sheet: #aec499;
   --elevated: #b9cfa3;
@@ -119,8 +131,8 @@
   --secondary: #1f2719;
   --accent: #56634a;
   --darker: #cbe3b4;
-  --muted: #4d5843;
-  --smoke: #3a4530;
+  --muted: #2c3723;
+  --smoke: #2a3322;
   --snow: #2a3322;
 
   --scene-sky: #9fb58a;
@@ -135,6 +147,8 @@
 
 /* Near black with neon. */
 [data-theme="void"] {
+  --on-accent: #0b0b10;
+  --control-border: #8b7cbd;
   --background: #0b0b10;
   --sheet: #13131c;
   --elevated: #181824;
